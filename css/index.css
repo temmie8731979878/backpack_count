@@ -1,0 +1,69 @@
+body{
+    background-color: #1E1E1E;
+
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: 微軟正黑體;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.text{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    line-height: 25px;
+}
+
+.c{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_1, .container_2, .container_3{
+    width: 600px;
+    height: auto;
+
+    border-style: solid;
+    border-color: #C0E4DC;
+    border-radius: 10px;
+    box-shadow: -2px -2px 5px -2px #C0E4DC;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.red, .purple, .yellow, .white, .gray, .need{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c2_box_2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c3_box_1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.question{
+    font-family: 微軟正黑體;
+    font-size: 18px;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+}
