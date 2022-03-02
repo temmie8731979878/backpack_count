@@ -13,6 +13,34 @@ h2{
     margin: 10px;
 }
 
+progress{
+    background-color: red;
+    width: 600px;
+    height: 5px;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+progress::-webkit-progress-value{
+    background-color: #DF1C4F;
+    box-shadow: -4px -4px 10px -2px #DF1C4F;
+}
+
+progress::-webkit-progress-bar{
+    background-color: gray;
+}
+
+.percent{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #DF1C4F;
+    text-shadow: #DF1C4F -2px -2px 3px;
+    line-height: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .text{
     font-family: 微軟正黑體;
     font-size: 16px;
