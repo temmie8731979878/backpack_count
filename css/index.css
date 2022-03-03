@@ -95,3 +95,18 @@ progress::-webkit-progress-bar{
     color: #C0E4DC;
     text-shadow: #C0E4DC -2px -2px 3px;
 }
+
+.container_3{
+    justify-content: start;
+}
+
+.donater{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    line-height: 25px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
