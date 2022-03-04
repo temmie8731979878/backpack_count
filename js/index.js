@@ -1,5 +1,5 @@
 var load = function(){
-    let l = [0, 1, 10, 10, 1165]; // red, purple, yellow, white, gray
+    let l = [0, 1, 10, 20, 1353]; // red, purple, yellow, white, gray
 
     
     document.getElementById("red").innerHTML = "自主存儲單位數量: " + l[0].toString();
