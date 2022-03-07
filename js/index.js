@@ -1,5 +1,5 @@
 var load = function(){
-    let l = [0, 2, 31, 58, 4220]; // red, purple, yellow, white, gray
+    let l = [0, 2, 41, 76, 6041]; // red, purple, yellow, white, gray
 
     document.getElementById("red").innerHTML = "自主存儲單位數量: " + l[0].toString();
     document.getElementById("purple").innerHTML = "公事包數量: " + l[1].toString();
