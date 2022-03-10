@@ -5,42 +5,10 @@ body{
     justify-content: center;
 }
 
-h2{
+/* 進度條 */
+.progress_container_1{
     font-family: 微軟正黑體;
-    color: #C0E4DC;
-    text-shadow: #C0E4DC -2px -2px 3px;
-    padding-top: 10px;
-    margin: 10px;
-    margin-bottom: 0px;
-}
-h3{
-    font-family: 微軟正黑體;
-    color: #C0E4DC;
-    text-shadow: #C0E4DC -2px -2px 3px;
-    margin: 10px;
-    margin-top: 5px;
-}
-
-progress{
-    background-color: red;
-    width: 600px;
-    height: 5px;
-    margin: 20px;
-    margin-top: 5px;
-}
-
-progress::-webkit-progress-value{
-    background-color: #DF1C4F;
-    box-shadow: -4px -4px 10px -2px #DF1C4F;
-}
-
-progress::-webkit-progress-bar{
-    background-color: gray;
-}
-
-.percent{
-    font-family: 微軟正黑體;
-    font-size: 16px;
+    font-size: 20px;
     color: #DF1C4F;
     text-shadow: #DF1C4F -2px -2px 3px;
     line-height: 25px;
@@ -49,14 +17,49 @@ progress::-webkit-progress-bar{
     padding-right: 20px;
 }
 
-.text{
-    font-family: 微軟正黑體;
-    font-size: 16px;
-    color: #C0E4DC;
-    text-shadow: #C0E4DC -2px -2px 3px;
-    line-height: 25px;
+.progress_container_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 5px;
+    margin: 20px;
+    margin-top: 5px;
 }
 
+.progress_bg{
+    /* position: absolute; */
+    width: 600px;
+    height: 5px;
+    background-color: gray;
+}
+
+.progress_v{
+    position: absolute;
+    width: var(--pixel);
+    height: 5px;
+    background-color: #DF1C4F;
+
+    animation-name: move_progress; /* 設定的動畫名稱 */
+    animation-duration: 1s; /* 持續時間 */
+    animation-timing-function: ease-out; /* 緩入 */
+}
+
+@keyframes move_progress{
+    from{width: 0px;}
+    to{width: var(--pixel);}
+}
+
+/* 背包圖片 */
+.red, .purple, .yellow, .white, .gray, .need{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 容器 */
 .c{
     display: flex;
     flex-direction: column;
@@ -77,14 +80,6 @@ progress::-webkit-progress-bar{
     justify-content: space-around;
 }
 
-.red, .purple, .yellow, .white, .gray, .need{
-    padding: 10px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .c2_box_2{
     display: flex;
     flex-wrap: wrap;
@@ -97,15 +92,33 @@ progress::-webkit-progress-bar{
     justify-content: flex-start;
 }
 
+.container_3{
+    justify-content: start;
+}
+
+/* 文字 */
+h2{
+    font-family: 微軟正黑體;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    padding-top: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-family: 微軟正黑體;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    margin: 10px;
+    margin-top: 5px;
+}
+
 .question{
     font-family: 微軟正黑體;
     font-size: 18px;
     color: #C0E4DC;
     text-shadow: #C0E4DC -2px -2px 3px;
-}
-
-.container_3{
-    justify-content: start;
 }
 
 .donater{
@@ -117,4 +130,12 @@ progress::-webkit-progress-bar{
     margin-left: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.text{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    color: #C0E4DC;
+    text-shadow: #C0E4DC -2px -2px 3px;
+    line-height: 25px;
 }
