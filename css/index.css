@@ -41,7 +41,7 @@ body{
     background-color: #DF1C4F;
 
     animation-name: move_progress; /* 設定的動畫名稱 */
-    animation-duration: 1s; /* 持續時間 */
+    animation-duration: 0.7s; /* 持續時間 */
     animation-timing-function: ease-out; /* 緩入 */
 }
 
