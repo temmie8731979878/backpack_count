@@ -11,13 +11,13 @@ var load = function(){
     var max = Math.floor((l[0]*75000 + l[1]*3000 + l[2]*150 + l[3]*10 + l[4])/75000*10000)/100;
     document.getElementById("progress_container_1").innerHTML = `
     <div class="progress_text" id="progress_text">${max}%</div>
-    `
+    `;
     document.getElementById("progress_container_2").innerHTML = `
     <div class="progress_bg" id="progress_bg">.</div>
     <div class="progress_v" id="progress_v" style="--pixel: ${max/100*600}px">.</div>
     <div class="progress_point" id="progress_point"></div>
-    `
-    console.log(max/100*600)
+    `;
+    console.log(max/100*600);
 }
 
 load();
